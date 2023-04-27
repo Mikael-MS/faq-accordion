@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./javascript/index.js" defer></script>
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+</head>
+<body>
+  <main class="main-container">
+    <div class="illustration">
+      <img src="./images/illustration-box-desktop.svg" alt="box" id="image-box">
+      <img src="./images/illustration-woman-online-desktop.svg" alt="illustration-woman" id="image-desktop">
+      <img src="./images/illustration-woman-online-mobile.svg" alt="illustration-woman" id="image-mobile">
+    </div> 
+    <section class="common-questions">
+      <h1><strong>FAQ</strong></h1>
+
+      <section class="questions">
+        <article class="question questionHide" >
+          <button type="button" class="btn" id="ask-members" onclick="accordion(0)">
+            <h4 class="title">How many team members can I invite? </h4>
+            <span class="icon-arrow"><img src="./images/icon-arrow-down.svg" alt="icon-arrow"></span>
+          </button>        
+          <p class="hide">You can invite up to 2 additional users on the Free plan. There is no limit on 
+            team members for the Premium plan.</p>
+        </article>
+        <article class="question questionHide">
+          <button type="button" class="btn" id="maximum-upload" onclick="accordion(1)">         
+            <h4 class="title">What is the maximum file upload size?</h4>
+            <span class="icon-arrow"><img src="./images/icon-arrow-down.svg" alt="icon-arrow"></span>
+          </button>        
+          <p class="hide">o more than 2GB. All files in your account must fit your allotted storage space.</p>
+        </article>
+        <article class="question questionHide">
+          <button type="button" class="btn" id="reset-password" onclick="accordion(2)">         
+            <h4 class="title">How do I reset my password?</h4>
+            <span class="icon-arrow"><img src="./images/icon-arrow-down.svg" alt="icon-arrow"></span>
+          </button> 
+          <p class="hide">Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.</p>
+        </article>
+        <article class="question questionHide" >
+          <button type="button" class="btn" id="cancel-subscription" onclick="accordion(3)">         
+            <h4 class="title">Can I cancel my subscription?</h4>
+            <span class="icon-arrow"><img src="./images/icon-arrow-down.svg" alt="icon-arrow"></span>
+          </button> 
+          <p class="hide">Yes! Send us a message and we’ll process your request no questions asked.</p>
+        </article>
+        <article class="question questionHide" onclick="accordion(4)">
+          <button type="button" class="btn" id="additional-support" >         
+          <h4 class="title">Do you provide additional support?</h4>
+            <span class="icon-arrow"><img src="./images/icon-arrow-down.svg" alt="icon-arrow"></span>
+          </button>
+          <p class="hide">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+        </article>
+      </section>
+    </section>
+
+  </main>
+ 
+</body>
+</html>
